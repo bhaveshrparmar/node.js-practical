@@ -1,0 +1,118 @@
+.recipe-list-container {
+    background: linear-gradient(180deg, #ffeaa7 0%, #fab1a0 100%);
+    min-height: calc(100vh - 80px);
+    padding-top: 2rem;
+}
+
+.page-title {
+    color: #d4691d;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-header {
+    background: linear-gradient(135deg, #d4691d 0%, #8b4513 100%);
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.recipe-title {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.recipe-category {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+}
+
+.recipe-author {
+    color: #8b4513;
+    padding: 0.5rem 1.5rem 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.recipe-description {
+    padding: 1rem 1.5rem;
+    color: #666;
+    flex-grow: 1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1.5rem 1rem;
+    border-top: 1px solid #eee;
+}
+
+.meta-item {
+    color: #d4691d;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-recipe {
+    background-color: #d4691d;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.btn-recipe:hover {
+    background-color: #b85b0d;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.btn-recipe:visited {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .recipe-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .recipe-category {
+        margin-left: 0;
+    }
+}
